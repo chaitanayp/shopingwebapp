@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root {
+    --main-bg-color: #16d610;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#9bf534 ;
+}
+
+header{
+    
+background-color: var(--main-bg-color);
+position: fixed;
+width: 100%;
+}
+
+
+
+ nav{
+display: flex;
+/* align-items: center; */
+position: relative;
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img{
+    padding: 0 8px;
+    width: 50px;
+}
+
+header nav ul  {
+height: 48px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+    }
+
+header nav ul li {
+list-style: none;
+padding: 0 12px;
+}
+
+header nav ul li a{
+    color: white;
+text-decoration: none;
+font-family: 'Raleway', sans-serif;
+}
+header nav ul li a:hover{
+color: black;  
+/* font-weight: bold; */
+border:2px solid white;
+border-radius: 12px;
+padding: 6px;
+background-color: whitesmoke;
+}
+
+.search{
+    display: flex;
+align-items: center;
+}
+
+.search input{
+width: 402px;
+height: 22px;
+border-radius: 5px;
+padding: 0 12px;
+margin: 0 14px 0 20px;
+}
+
+.search button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+.search button:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.slider{
+    margin: auto;
+    width: 100vw;
+    height:400px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+    0%{}
+    35%{}
+    75%{}
+}
+.slider img{
+    margin: auto;
+    width: 90vw;
+    height:auto;
+    margin: 10px auto;
+    
+}
+
+.slider img .img1{
+    transform: translate(-36vw, 0);
+   
+}
+
+.slider img .img2{
+    transform: translate(-3vw, 0vw);
+   
+}
+
+.slider img .img3{
+    transform: translate(27vw, 0vw);
+}
+
+.container{
+min-height: calc(100vh - 48px - 12vh);
+overflow: clip;
+}
+
+.card{
+    max-width: 1430px;
+margin: auto;
+background-color: var(--main-bg-color);
+}
+
+.card h2{
+    margin: 15px 0;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.carditem{
+    width: 180px;
+display: inline-flex;
+justify-content: center;
+flex-direction: column;
+margin: 0 10px 0;
+padding: 4px;
+}
+
+.carditem:hover{
+   background-color: white;
+   font-weight: bold;
+}
+footer{
+    margin-top: 12px;
+height:12vh;
+background-color:var(--main-bg-color);
+color: white;
+font-family: 'Raleway', sans-serif;
+}
